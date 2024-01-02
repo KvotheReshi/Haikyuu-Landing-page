@@ -1,0 +1,34 @@
+.container {  display: grid;
+  grid-template-columns: 1fr 0.8fr 1.2fr;
+  grid-template-rows: 0.5fr 1.5fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "titulo titulo ."
+    "Personajes Personajes Info-de-personaje"
+    "Personajes Personajes grafica-de-radar";
+}
+
+.Personajes { grid-area: Personajes; }
+
+.player {
+  height: 600px;
+  width: auto;
+}
+
+.titulo { grid-area: titulo; }
+
+.titulo {
+  font-family: 'bebas neue';
+  font-size: 90px;
+  text-align: center;
+  color: white;
+}
+
+.kanji {
+  font-size: 80px;
+}
+.grafica-de-radar { grid-area: grafica-de-radar; }
+
+.Info-de-personaje { grid-area: Info-de-personaje; }
+
