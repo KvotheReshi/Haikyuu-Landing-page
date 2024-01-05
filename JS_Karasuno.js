@@ -1,18 +1,15 @@
-const imgHinata = document.getElementById('hinata');
-const infoHinata = document.getElementById('info-shoyo');
-const imgKageyama = document.getElementById('kageyama');
-const infoKageyama = document.getElementById('info-tobio');
+function changeImage(newSrc, altText) {
+  var image = document.getElementById('info-img');
 
-imgHinata.addEventListener('mouseover',function(){
-  infoHinata.style.opacity = 100
-});
-imgHinata.addEventListener('mouseout',function(){
-  infoHinata.style.opacity = 0
-});
+  // Add a class to initiate the transition
+  image.classList.add('fade-out');
 
-imgKageyama.addEventListener('mouseover',function(){
-  infoKageyama.style.opacity = 100
-});
-imgKageyama.addEventListener('mouseout',function(){
-  infoKageyama.style.opacity = 0
-});
+  // After a short delay, change the image source and alt text
+  setTimeout(function() {
+      image.src = newSrc;
+      image.alt = altText;
+
+      // Remove the class to reset the opacity
+      image.classList.remove('fade-out');
+  }, 500); // Adjust the delay to match the transition duration
+}
