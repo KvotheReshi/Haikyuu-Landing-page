@@ -4,42 +4,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Karasuno</title>
-  <link rel="stylesheet" type="text/css" href="Css_Karasuno.css">
-  <link rel="stylesheet" type="text/css" href="music_css.css">
+  <link rel="stylesheet" type="text/css" href="./styles/Css_Karasuno.css">
+  <link rel="stylesheet" type="text/css" href="./styles/music_css.css">
   <link rel="stylesheet" href="https://icono-49d6.kxcdn.com/icono.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik+Spray+Paint&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
-  <script src="JS_Karasuno.js" defer></script>
-  <script src="music_js.js" defer></script>
+  <script src="./scripts/charjs.js" defer></script>
+  <script src="./scripts/characters.js" defer></script>
+  <script src="./scripts/JS_Karasuno.js" defer></script>
+  <script src="./scripts/music_js.js" defer></script>
 </head>
 <body>
   <div id="page-wrapper">
     <div id="banner">
-      <img class="banner" src="banner.jpg">
+      <img class="banner" src="./assets/banner.jpg">
     </div>
     <div id="left-panel">
       <h1 class="title">Karasuno players</h1>
-      <img id="daichi" class="player" src="daichi-icon.png" onmouseover="mountImage('info-daichi.jpg', '')" onmouseout="unmountImage()">
-      <img id="sugawara" class="player" src="sugawara-icon.png" onmouseover="mountImage('info-sugawara.jpg', '')" onmouseout="unmountImage()">
-      <img id="asahi" class="player" src="asahi-icon.png" onmouseover="mountImage('info-asahi.jpg', '')" onmouseout="unmountImage()">
-      <img id="ennoshita" class="player" src="ennoshita-icon.png" onmouseover="mountImage('info-ennoshita.jpg', '')" onmouseout="unmountImage()">
-      <img id="noya" class="player" src="noya-icon.png" onmouseover="mountImage('info-noya.jpg', '')" onmouseout="unmountImage()">
-      <img id="tanaka" class="player" src="tanaka-icon.png" onmouseover="mountImage('info-tanaka.jpg', '')" onmouseout="unmountImage()">
-      <img id="hinata" class="player" src="hinata-icon.png" onmouseover="mountImage('info-hinata.jpg', '')" onmouseout="unmountImage()">
-      <img id="kageyama" class="player" src="kageyama-icon.png" onmouseover="mountImage('info-kageyama.jpg', '')" onmouseout="unmountImage()">
-      <img id="tsuki" class="player" src="tsuki-icon.png" onmouseover="mountImage('info-tsuki.jpg', '')" onmouseout="unmountImage()">
-      <img id="tadashi" class="player" src="tadashi-icon.png" onmouseover="mountImage('info-tadashi.jpg', '')" onmouseout="unmountImage()">
+      <img id="daichi" class="player" src="./assets/daichi-icon.png" onmouseover="mountImage('./assets/info-daichi.jpg', '')" onmouseout="unmountImage()">
+      <img id="sugawara" class="player" src="./assets/sugawara-icon.png" onmouseover="mountImage('./assets/info-sugawara.jpg', '')" onmouseout="unmountImage()">
+      <img id="asahi" class="player" src="./assets/asahi-icon.png" onmouseover="mountImage('./assets/info-asahi.jpg', '')" onmouseout="unmountImage()">
+      <img id="ennoshita" class="player" src="./assets/ennoshita-icon.png" onmouseover="mountImage('./assets/info-ennoshita.jpg', '')" onmouseout="unmountImage()">
+      <img id="noya" class="player" src="./assets/noya-icon.png" onmouseover="mountImage('./assets/info-noya.jpg', '')" onmouseout="unmountImage()">
+      <img id="tanaka" class="player" src="./assets/tanaka-icon.png" onmouseover="mountImage('./assets/info-tanaka.jpg', '')" onmouseout="unmountImage()">
+      <img id="hinata" class="player" src="./assets/hinata-icon.png" onmouseover="mountImage('./assets/info-hinata.jpg', '')" onmouseout="unmountImage()">
+      <img id="kageyama" class="player" src="./assets/kageyama-icon.png" onmouseover="mountImage('./assets/info-kageyama.jpg', '')" onmouseout="unmountImage()">
+      <img id="tsuki" class="player" src="./assets/tsuki-icon.png" onmouseover="mountImage('./assets/info-tsuki.jpg', '')" onmouseout="unmountImage()">
+      <img id="tadashi" class="player" src="./assets/tadashi-icon.png" onmouseover="mountImage('./assets/info-tadashi.jpg', '')" onmouseout="unmountImage()">
     </div>
     <div id="content">
-      <div id="parte1">parte 1</div>
+      <div id="parte1">
+        <canvas id="myChart"></canvas>
+      </div>
       <div id="parte2">
         <img id="info-img" class="info">
       </div>
     </div>
     <div id="footer">
       <audio>
-        <source src="Haikyuu background music.mp3"  type="audio/mp3">
+        <source src="./assets/Haikyuu_background_music.mp3"  type="audio/mp3">
       </audio> 
       <div class="audio-player">
         <div class="timeline">

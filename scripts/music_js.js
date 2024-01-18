@@ -6,11 +6,10 @@
 
 const audioPlayer = document.querySelector(".audio-player");
 const audio = new Audio(
-  "Haikyuu background music.mp3"
+  "../assets/Haikyuu_background_music.mp3"
 );
 //credit for song: Adrian kreativaweb@gmail.com
-
-console.dir(audio);
+ 
 
 audio.addEventListener(
   "loadeddata",
@@ -92,3 +91,4 @@ function getTimeCodeFromNum(num) {
     seconds % 60
   ).padStart(2, 0)}`;
 }
+ 
