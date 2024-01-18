@@ -19,14 +19,18 @@ function mountImage(newSrc, altText, divId) {
   image.altText = altText;
   image.classList.add('animation-fadein')  
   image.classList.add('info')
-  image.setAttribute('id','imageHovered')
+  image.classList.add('imageHovered')
   parent.appendChild(image);
 }
 
 function unmountImage() { 
-  var image = document.getElementById('imageHovered');
-  image.classList.add('animation-fadeout')  
-  image.classList.add('fade-out')   
+  var images = document.getElementsByClassName('imageHovered');
+  console.log(images);
+
+  for (var i = 0; i < images.length; i++) {
+    images[i].classList.add('animation-fadeout')  
+    images[i].classList.add('fade-out')
+  }
 }
 
 /*function mountImage2(newSrc, altText) {  
