@@ -25,7 +25,6 @@ function mountImage(newSrc, altText, divId) {
 
 function unmountImage() { 
   var images = document.getElementsByClassName('imageHovered');
-  console.log(images);
 
   for (var i = 0; i < images.length; i++) {
     images[i].classList.add('animation-fadeout')  
@@ -34,13 +33,13 @@ function unmountImage() {
 }
 
 /*function mountImage2(newSrc, altText) {  
-  const parent = document.getElementById('full-body');
+  const parent = document.getElementById('parte2');
   parent.innerHTML = null;
   const image = document.createElement('img'); 
   image.src = newSrc;
   image.altText = altText;
   image.classList.add('animation-fadein')  
-  image.classList.add('body-character')
+  image.classList.add('info')
   image.setAttribute('id','imageHovered')
   parent.appendChild(image);
 }

@@ -94,7 +94,7 @@
   background-color: lightcoral;
 }
 
-.info, .body-character {
+.info {
   object-fit:fill;
   height: 100%;
   width: 100%;
