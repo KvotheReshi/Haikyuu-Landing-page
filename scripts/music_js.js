@@ -6,7 +6,7 @@
 
 const audioPlayer = document.querySelector(".audio-player");
 const audio = new Audio(
-  "Haikyuu background music.mp3"
+  "./assets/Haikyuu_background_music.mp3"
 );
 //credit for song: Adrian kreativaweb@gmail.com
 
