@@ -8,15 +8,17 @@ function mountChart(srcCharac) {
   if (character.length === 0) return;
   const {power,jump,stamina,strategy,technique,speed} = character[0];
   const data = {
-    labels: ['power','jump','stamina','strategy','technique','speed'],
+    labels: ['Power','Jump','Stamina','Strategy','Technique','Speed'],
     datasets: [{
       label: 'Stats',
       data: [power,jump,stamina,strategy,technique,speed],
       fill: true,
       backgroundColor: 'rgba(45, 100, 250, 0.2)',
-      borderColor: 'rgba(0, 0, 0, 0.1)',
-      pointBackgroundColor: 'rgb(50, 50, 200)',
-      pointBorderColor: '#fff',
+      borderColor: 'rgba(0, 0, 0, 0.2)',
+      pointBackgroundColor: 'white',
+      pointRadius: 10,
+      pointBorderColor: 'rgb(230, 115, 15)',
+      pointBorderWidth:3,
       pointHoverBackgroundColor: '#fff',
       pointHoverBorderColor: 'rgb(255, 99, 132)'
     }]
@@ -24,7 +26,19 @@ function mountChart(srcCharac) {
   new Chart(ctx, {
     type: 'radar',
     data: data,
-    options: { 
+    options: {
+      Plugins:{
+        datalabels: {
+      /* formatter */
+      formatter: function(value, context) {
+        return context.chart.data.labels[context.value];
+      }
+    }
+      },
+      scales: {r: {grid: {lineWidth: 3, color: 'rgba(0,0,0, 0.8)'},
+      pointLabels: {color: 'dark blue', font:{size: 14}},
+      angleLines: {color: 'black'}
+    }},
       scale: {
         ticks: {
             beginAtZero: true,

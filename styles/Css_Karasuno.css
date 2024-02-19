@@ -59,21 +59,17 @@
   display: flex;
   /*background: #9C9;*/
   flex: 1 1 auto;
-  height: 60vh;
+  height: 70vh;
+  z-index: -3;
+  background-size: cover;
 }
 
 #parte1 {
   display: flex;
-  justify-content:space-evenly;
-  align-items: center;
   width: 100vh;
-  background-color: yellow;
   z-index: -1;
-}
-
-.fondoDePagina {
-  height: 100%;
-  width: 100%;
+  justify-content: flex-end;
+  align-items: flex-start;
 }
 
 #full-body {
@@ -86,28 +82,21 @@
   z-index: 1;
   position: absolute;
   left: 300px;
-  bottom: 45px;
+  bottom: 40px;
 }
 #grafica{
-  background-color: rgb(108, 215, 108);
-  width: 25%;
-  height: 40%;
-  display: flex;
-  align-self:last baseline;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  right: 680px;
-  top:  500px;
+  background-color: rgba(238, 131, 10, 0.1);
+  width: 50%;
+  height: 50%;
+  position: relative;
 }
 #myChart{
-  height: 100px;
-  width: 150px;
+  height: 200px;
+  width: 200px;
 }
 #parte2 {
   display: flex;
   flex: 1;
-  background-color: lightcoral;
 }
 
 .info {
