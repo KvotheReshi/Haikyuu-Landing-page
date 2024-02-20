@@ -4,6 +4,7 @@
   height: 100vh;
 
 }
+
 #left-panel {
   background: black;
   min-height: 100vh;
@@ -59,9 +60,9 @@
   justify-content: center;
   align-items: center;
 }
+
 #content {
   display: flex;
-  /*background: #9C9;*/
   flex: 1 1 auto;
   height: 70vh;
   z-index: -3;
@@ -70,35 +71,33 @@
 
 #parte1 {
   display: flex;
+  align-items: end;
+  justify-content: space-between;
   width: 100vh;
   z-index: -1;
-  justify-content: flex-end;
-  align-items: flex-start;
+
 }
 
 #full-body {
-  /*background-color: rgb(135, 71, 135);*/
-  height: 70%;
-  width: 25%;
+  height: 85%;
+  width: 50%;
   display: flex;
-  justify-content: center;
-  align-items:flex-start;
+  align-items:flex-end;
   z-index: 1;
-  position: absolute;
-  left: 300px;
-  bottom: 40px;
 }
+
 #grafica{
-  background-color: rgba(238, 131, 10, 0.1);
   width: 40%;
   height: 40%;
   margin-right: 5px;
-  position: relative;
+  align-self: flex-start;
 }
+
 #myChart{
   height: 200px;
   width: 200px;
 }
+
 #parte2 {
   display: flex;
   flex: 1;
