@@ -14,13 +14,17 @@
   <script src="./scripts/music_js.js" defer></script>
   <script src="./scripts/charjs.js" defer></script>
   <script src="./scripts/characters.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0" defer></script>
   <script src="./scripts/mountChartjs.js" defer></script>
+
+
 </head>
 <body>
   <div id="page-wrapper">
     <div id="left-panel">
       <h1 class="title">Karasuno players</h1>
-      <img id="daichi" class="player" src="./assets/daichi-icon.png" onmouseover="mountContent('./assets/info-daichi.jpg', 'parte2', './assets/daichi.png', 'full-body');" onmouseout="unmountContent()">
+      <img id="daichi" class="player" src="./assets/daichi-icon.png" onmouseover="mountContent('./assets/info-daichi.jpg', 'parte2', './assets/daichi.png', 'full-body');">
       <img id="sugawara" class="player" src="./assets/sugawara-icon.png" onmouseover="mountContent('./assets/info-sugawara.jpg', 'parte2', './assets/sugawara.png', 'full-body');" onmouseout="unmountContent()">
       <img id="asahi" class="player" src="./assets/asahi-icon.png" onmouseover="mountContent('./assets/info-asahi.jpg', 'parte2', './assets/asahi.png', 'full-body');" onmouseout="unmountContent()">
       <img id="ennoshita" class="player" src="./assets/ennoshita-icon.png" onmouseover="mountContent('./assets/info-ennoshita.jpg', 'parte2', './assets/ennoshita.png', 'full-body');" onmouseout="unmountContent()">
