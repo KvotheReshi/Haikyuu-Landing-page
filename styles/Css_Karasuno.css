@@ -1,7 +1,8 @@
 #page-wrapper {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
   height: 100vh;
+
 }
 #left-panel {
   background: black;
@@ -10,6 +11,13 @@
   order: -1;
   flex: 0 0 auto;
   text-align: center;
+}
+
+#rightPanel {
+  display: flex;
+  flex: 1;
+  flex-flow: column wrap;
+  min-height: 100%;
 }
 
 .title {
@@ -32,10 +40,6 @@
   transition: 0.5s;
 }
 
-#banner, #footer, #content {
-  width: calc(100% - 300px);
-  min-height: auto;
-}
 #banner {
   background: #99C;
   height: 140px;
