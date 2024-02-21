@@ -1,7 +1,7 @@
 // power,jump,stamina,strategy,technique,speed
 
 const daichi = {
-  src: './assets/info-daichi.jpg',
+  src: './assets/newdaichi.png',
   power:4,
   jump:3,
   stamina:3,
@@ -11,7 +11,7 @@ const daichi = {
 }
 
 const sugawara = {
-  src: './assets/info-sugawara.jpg',
+  src: './assets/newsugawara.png',
   power:2,
   jump:2,
   stamina:2,
@@ -20,7 +20,7 @@ const sugawara = {
   speed:2
 }
 const asahi = {
-  src: './assets/info-asahi.jpg',
+  src: './assets/newasahi.png',
   power:5,
   jump:3,
   stamina:3,
@@ -29,7 +29,7 @@ const asahi = {
   speed:2
 }
 const ennoshita = {
-  src: './assets/info-ennoshita.jpg',
+  src: './assets/newennoshita.png',
   power:3,
   jump:2,
   stamina:3,
@@ -38,7 +38,7 @@ const ennoshita = {
   speed:2
 }
 const noya = {
-  src: './assets/info-noya.jpg',
+  src: './assets/newnoya.png',
   power:2,
   jump:4,
   stamina:5,
@@ -47,7 +47,7 @@ const noya = {
   speed:5
 }
 const tanaka = {
-  src: './assets/info-tanaka.jpg',
+  src: './assets/newtanaka.png',
   power:5,
   jump:3,
   stamina:4,
@@ -57,7 +57,7 @@ const tanaka = {
 } 
 
 const hinata = {
-  src: './assets/info-hinata.jpg',
+  src: './assets/newhinata.png',
   power:1,
   jump:5,
   stamina:5,
@@ -67,7 +67,7 @@ const hinata = {
 }
 
 const kageyama = {
-  src: './assets/info-kageyama.jpg',
+  src: './assets/newkageyama.png',
   power:4,
   jump:4,
   stamina:5,
@@ -76,7 +76,7 @@ const kageyama = {
   speed:4
 }
 const tsuki = {
-  src: './assets/info-tsuki.jpg',
+  src: './assets/newtsuki.png',
   power:2,
   jump:3,
   stamina:3,
@@ -85,7 +85,7 @@ const tsuki = {
   speed:3
 }
 const tadashi = {
-  src: './assets/info-tadashi.jpg',
+  src: './assets/newtadashi.png',
   power:2,
   jump:3,
   stamina:2,
